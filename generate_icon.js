@@ -152,7 +152,7 @@ function generateColor(hash) {
         green = 128;
     }
 
-    // Increase values to at least MIN_COLOR_SUM to eliminate black colors
+    // Increase values to at least MIN_COLOR_SUM to eliminate dark colors
     let sum = red + green + blue;
     if(sum < MIN_COLOR_SUM) {
         let multiplier = MIN_COLOR_SUM / sum; // some value greater than 1
