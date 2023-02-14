@@ -7,4 +7,4 @@ Instructions
 - Type in some username
 - Click Button to Generate Icon from Usernames
 
-It's pretty self-explanatory
+Try out different combinations of names, heights, widths, etc.
