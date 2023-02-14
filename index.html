@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="md5.min.js"></script>
+        <script src="generate_icon.js"></script>
+    </head>
+    <body>
+        <p style="font-weight: bold; font-style: italic;">
+            Tip: the string hash is 32 bytes, so using a width of 16, 24, or 32 and a height of 30-50 makes some really cool images. <br/>
+            Offset by 1 widths are also cool.  Try "ava" with height = 40 and width = 33!
+        </p>
+        Input user name
+        <input id="username"/>
+        <br/>
+        Icon Height (1-50)
+        <input type="number" min="1" max="50" id="iconHeight" value="5" />
+        <br/>
+        Icon Width (1-50)
+        <input type="number" min="1" max="50" id="iconWidth" value="5" />
+        <br/>
+        Scale (1-100)
+        <input type="number" min="1" max="100" id="iconScale" value="20" />
+        <br/>
+        <br/>
+        <button onclick="generateGithubStyleIcon()">Generate Icon From Username</button>
+        <br/>
+        <br/>
+
+        <canvas hidden id="userIcon" height="0" width="0" style="border:1px solid grey;"></canvas>
+        <br/>
+        <br/>
+        <button id="downloadIconButton" onclick="downloadIcon()" disabled>Donwload Icon</button>
+    </body>
+</html>
